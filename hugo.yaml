@@ -1,0 +1,474 @@
+baseURL: "profiel.jovelo.eu"
+languageCode: "nl-be"
+title: "Jonathan Hooft"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+   # - identifier: gallery
+   #   name: Gallery
+   #   title: Blog posts
+   #   url: /gallery
+   #   weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Profiel Jonathan"
+  description: "Mijn profiel op het web"
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it shouldcolor be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: false
+    # defaultTheme: "dark" # light
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference:
+  # When using hex codes for colors, quotations must be used along with the # sign
+    color:
+     textColor: "#343a40"
+     secondaryTextColor: "#6c757d"
+     textLinkColor: "#007bff"
+     backgroundColor: "#veaedf0"
+     secondaryBackgroundColor: "#64ffda1a"
+     primaryColor: "#007bff"
+     secondaryColor: "#f8f9fa"
+
+     darkmode:
+       textColor: "#e4e6eb"
+       secondaryTextColor: "#b0b3b8"
+       textLinkColor: "#ffffff"
+       backgroundColor: "#4a6741"
+       secondaryBackgroundColor: "#212529"
+       primaryColor: "#ffffff"
+       secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: true
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Welkom op de website van"
+    title: "Jonathan HOOFT"
+    subtitle: "Samen onze Zorg vormen"
+    content: "Bestuurder en applicatiebeheerder bij organisaties in de Gezondheidszorg. Gemotiveerd om waar ik kan onze zorg een klein beetje beter te maken"
+    image: "images/profile/IMG-20250629-WA0004.jpg" #"/Profile-me.jpg"
+    bottomImage:
+      enable: false
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Curriculum Vitae"
+      url: "#"
+      download: true
+      newPage: false
+    #socialLinks:
+     #fontAwesomeIcons:
+     #  - icon: fab fa-github
+     #    url: https://example.com
+     # - icon: fab fa-x-twitter
+     #    url: https://example.com
+    #customIcons:
+     #  - icon: /fav.png
+     #    url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "Over mij"
+    image: "/images/profile/Profile-me.jpg"
+    content: |-
+      "Gezondheidszorgleider, IT-strateeg en bestuurslid met een unieke combinatie van klinische, operationele en bestuurlijke expertise. 
+      Ik specialiseer me in het moderniseren van gezondheidszorgsystemen en het overbruggen van kloofjes tussen teams, generaties en strategieën. 
+      Momenteel leid ik een vijfjarig beleidsplan om de governance en digitale infrastructuur van [Organisatienaam] te transformeren."
+
+    skills:
+      enable: true
+      title: "Mijn voornaamste karaktereigenschappen"
+      items:
+        - "Betrouwbaar"
+        - "Geëngageerd"
+        - "Strategisch denken"
+        - "Proces implementaties"
+
+
+  # Experience
+  experience:
+    enable: true
+    title: "Ervaring"
+    items:
+      - company: "AXXON KiK"
+        companyUrl: "https://axxon.be"
+        jobs:
+          - name: "Bestuurder beleidsplan"
+            date: "2023 - heden"
+            content: |            
+             - Analyse van de lopende processen en projecten
+             - Belangrijkste processen en projecten kiezen
+             - Deze prioritaire zaken vertale naar concrete operationale doelstellingen met timing. 
+             - Tot slot heb ik al deze operationele vertaald naar een coherente tekst en een opvolgdashboard.
+            # info:
+            #  content: Working as a senior software developer
+            #featuredItems:
+            #  fontAwesomeIcons:
+            #    - icon: fa-brands fa-react
+            #      url: https://react.dev/
+            #      tooltip: Example tooltip content
+            #    - icon: fab fa-x-twitter
+            #      url: https://example.com
+            #      # tooltip: Example tooltip content
+            #  customIcons:
+            #    - icon: /fav.png
+            #      url: "https://example.com"
+            #      tooltip: Example tooltip content
+          - name: "Expert Instellingen"
+            date: "2020 - 2023"
+            content:  |
+             - Ervaringsdeskundige op het vlak van kinesitherapie in ziekenhuizen. 
+             - Samen een structuur opgezet met vaste werkgroepen en klankboordgroepen uit het werkveld. 
+             - Onze voornaamste taak was het vertalen van hun werkgroep naar concreet beleid binnen AXXON, KiK
+
+      - company: "ZAS ICT"
+        companyUrl: "https://zas.be"
+        jobs:
+          - name: "Expert Applicatiebeheer"
+            date: "2023 - heden"
+          #  info:
+          #    content: I worked as a software developer for more than one year in Amazon.
+            content: |
+              In deze rol ondersteun ik dagelijks collega's op de werkvloer met klinische ICT toepassingen. 
+              Dit door ondersteuning bij problemen als door het uitrollen van nieuwe features en toepassingen via projecten. 
+              Momenteel werk ik o.a. aan: 
+
+              - Projectverantwoordelijke voor implementeren van een LLM bij diagnoseregistratie
+              - Verantwoordelijke voor werkgroep die de performantie van het EPD bewaakt
+              - Integreren van telegeneeskunde in het EPD
+
+      - company: "ZAS Revalidatie"
+        companyUrl: "https://zas.be"
+        jobs: 
+        - name: "Adjunct diensthoofd"
+          date: "2019 - 2023"
+          #featuredItems:
+          #  fontAwesomeIcons:
+          #    - icon: fa-brands fa-react
+          #      url: https://react.dev/
+          #    - icon: fab fa-x-twitter
+          #      url: https://example.com
+          #  customIcons:
+          #    - icon: /fav.png
+          #      url: "https://example.com"
+          content: |
+            Naast het werk als therapeut ondersteunde ik het diensthoofd in 
+            
+            - strategische keuzes, 
+            - verbeterprojecten opzetten en uitrollen
+            - dagelijkse organisatie van de dienst (vakantieplannen, dienstroosters,...)
+
+            Mijn grootste project was het uittekenen en implementeren van een nieuwe werking gebaseerd op inhoudelijk congruente clusters. 
+             
+        - name: "Kinestherapeut"
+          date: " 2015 - 2023"
+          content: |
+            Afgestudeerd in de inwendige aandoeningen, heb ik voornamlijk gewerkt op internistische diensten 
+            - Geriatrie 
+            - Oncologie 
+            - Pneumologie
+            - Intensieve zorgen. 
+
+            Daarnaast was ik ook steeds flexibel inzetbaar op andere diensten waar tijdelijke tekorten waren. 
+      
+
+      - company: "VVS"
+        companyUrl: "https://vvs.ac"
+        jobs:
+        - name: "Voorzitter Vlaamse Vereniging van Studenten"
+          date: " 2015 - 2017"
+          content: |
+            Na een zeer woelige tijd met een moeizame overdracht heb ik vooral werk gemaakt van rust en stabiliteit. In 2 jaar zijn we erin geslaagd uitzonderlijk veel standpunten uit te brengen en de interne werking op punt gesteld. 
+            Naast de rust hebben we actief geageerd en gereageerd op de grote studenten-dossiers van die tijd zowel op straat in de media als in werkgroepen, raden en bestuursorganen
+
+            - Betogingen tegen verhoogde inschrijvingsgelden
+            - Een oplossing voor studenten getroffen door stakingen van het OV tijdens de examens
+            - Een grote studentenraad die de organisatie verliet
+
+      - company: "Vrije Universiteit Brussel"
+        companyUrl: "https://vub.be"
+        jobs:
+        - name: "Voorzitter Studenten- en Stuvoraad"
+          date: "2014 - 2015"
+          content: 
+           Studenten- en Stuvoraad zijn verantwoordelijk voor alles van subsidies van de studentenverenigingen over studentenrestaurant tot het kotenbeleid
+           De voornaamste dossiers in mijn voorzittersjaar. 
+           
+           - Een nieuw kotenbeleid 
+           - Implenteren van genderquota's 
+           - Ondertekenen van de Bolognaverklaring door de VUB
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Lean Sigma Six: Yellow Belt"
+        school:
+          name: "Lean Team ZAS"
+        date: "2024" 
+    
+      - title: "Master Management & Beleid in de Gezondheidszorg"
+        school:
+          name: "Katholieke Universiteit Leuven"
+          url: "https://www.kuleuven.be/opleidingen/master-management-beleid-gezondheidszorg"
+        date: "2020 - 2022"
+      #  GPA: "3.8 out of 5.0"
+        content: |-
+          Thesis: Process evaluation of the Magnet4Europe intervention
+
+          Enkele favoriete opleidingsonderdelen
+            - Human Resourse
+            - Modellen van de Gezondheidszorg
+            - ICT in de Gezondheidszorg
+      - title: "Master Revalidatiewetenschappen & Kinesitherapie"
+        school:
+          name: "Vrije Universiteit Brussel"
+          url: "https://www.vub.be/nl/studeren-aan-de-vub/alle-opleidingen/bachelor-en-masteropleidingen-aan-de-vub/revalidatiewetenschappen-en-kinesitherapie"
+        date: "2010 - 2015"
+      #  GPA: "3.9 out of 5.0"
+        content: |-
+          Thesis: The wavelet analysis of sEMG as a tool to measure muscular fatigue during a counter motion jump in, healthy adult: a pilot study
+
+          Enkele favoriete opleidingsonderdelen
+          - Pneumologie 
+          - Cardiologie
+          - Praktijkmanagement
+
+      #  featuredLink:
+      #    enable: true
+      #    name: "My academic record"
+      #    url: "https://example.com"
+      
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Portfolio"
+    items:
+      - title: Beleidsplan AXXON KiK
+        content: Verantwoordelijk bestuurder en auteur van het beleidsplan van AXXON. Op basis van de bestaande beleidsdocumenten en de bestaande projecten binnen de organisatie, heb ik een gedragen visie uitgeschreven tot het einde van legislatuur.
+      #  url: https://example.com
+        image: /images/achievements/axxonbeleidsplan.png
+      - title: Coördinatie Performantie Team ICT
+        content: Meldingen rond performantie werden lang niet of onvoldoende opgevolgd. Op mijn intiatief werd de werking van het performantie team hertekent. Nu worden meldingen systematischer opgepikt en opgelost. Daarbij wordt kennis meer gedeeld en is er nu ook pro-actief beleid rond performantie.  
+        image: /images/achievements/performance.jpeg
+      - title: Functionele herstructurering kinesitherapie ZAS Middelheim
+        content: |-
+         De kinesitherapie wordt een steeds breder veld. Daardoor dringt specialisatie zich meer en meer op. Naast een solide basis hebben de meeste therapeuten intussen een  bepaalde afstudeerrichting of expertise opgebouwd in een bepaald domein. 
+         Om deze specialisatie maximaal te laten renderen, heb ik een nieuwe werking op touw gezet. Deze cluster collega's met gelijkaardige specialismen en koppelt die cluster een de relevante ziekenhuisafdelingen. 
+         Dit was een grote verandering en naast het uitwerken van het concept, heb ik samen met enkele collega's en het diensthoofd een veranderingstraject gelopen waarij iedereen uiteindelijk zijn draai gevonden heeft
+      #  url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievements/OIP.jpeg
+      - title: Deze website bouwen
+        content: |- 
+         Naast mijn job en bestuursmandaat, werk ik graag af en toe aan een hobby-project. Bij voorkeur zijn dit praktische en laagdrempelige informatica-projectjes die goed zijn uitgewerkt op wiki's, in youtube video's en/of forums. 
+         Een van deze projecten is deze website!
+      - title: Beleidsvoorstellen ikv begroting AXXON KiK
+        content: |-  
+         Als bestuur is financiële optimalisatie steeds een belangrijk aandachtspunt. In 3 etappes zijn we gekomen tot bijsturingen met positieve impact op de financieën en in lijn met het vooropgestelde beleid.
+          
+      #  url: https://example.com
+
+  # projects
+  projects:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        badges:
+          - "Django"
+          - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contacteer me"
+    content: Mijn inbox is altijd open. Heb je een vraag, een inzicht of wil je gewoon dag zeggen?
+             Stuur een bericht en ik antwoord snel! 
+    btnName: E-mail mij
+    btnLink: mailto:info@jovelo.eu
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"gurusabarisha@gmail.com
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+  #  socialNetworks:
+  #    github: https://github.com
+  #    linkedin: https://linkedin.com
+  #    twitter: https://twitter.com
+  #    instagram: https://instagram.com
+  #    facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
