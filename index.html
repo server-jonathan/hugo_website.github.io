@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.152.2"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="profiel.jovelo.eu/">
+  <meta property="og:site_name" content="Jonathan Hooft">
+  <meta property="og:title" content="Jonathan Hooft">
+  <meta property="og:description" content="Mijn profiel op het web">
+  <meta property="og:locale" content="nl_be">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jonathan Hooft">
+  <meta name="twitter:description" content="Mijn profiel op het web">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content=Mijn&#32;profiel&#32;op&#32;het&#32;web>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+Jonathan Hooft
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/profiel.jovelo.eu">
+                
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hugo Profile
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/profiel.jovelo.eu#about" aria-label="about">
+                            Over mij
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/profiel.jovelo.eu#experience"
+                            aria-label="experience">
+                            Ervaring
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/profiel.jovelo.eu#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/profiel.jovelo.eu#achievements"
+                            aria-label="achievements">
+                            Portfolio
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/profiel.jovelo.eu#contact"
+                            aria-label="contact">
+                            Contacteer me
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="profiel.jovelo.eu/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <span class="subtitle">
+                    Welkom op de website van
+                </span>
+                <h1>
+                    Jonathan HOOFT
+                </h1>
+                <h2>
+                    Samen onze Zorg vormen
+                </h2>
+                <p class="hero-content">
+                    Bestuurder en applicatiebeheerder bij organisaties in de Gezondheidszorg. Gemotiveerd om waar ik kan onze zorg een klein beetje beter te maken
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                        <a href="#" class="btn" download
+			  >
+                            Curriculum Vitae
+                        </a>
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+
+    
+</span>
+</div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="images/profile/IMG-20250629-WA0004.jpg"
+                            class="img-thumbnail mx-auto"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">Over mij</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="/images/profile/Profile-me.jpg" class="img-thumbnail mx-auto rounded-circle" alt="">
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                &ldquo;Gezondheidszorgleider, IT-strateeg en bestuurslid met een unieke combinatie van klinische, operationele en bestuurlijke expertise.
+Ik specialiseer me in het moderniseren van gezondheidszorgsystemen en het overbruggen van kloofjes tussen teams, generaties en strategieën.
+Momenteel leid ik een vijfjarig beleidsplan om de governance en digitale infrastructuur van [Organisatienaam] te transformeren.&rdquo;
+
+                
+                Mijn voornaamste karaktereigenschappen
+                <ul>
+                    
+                    <li>Betrouwbaar</li>
+                    
+                    <li>Geëngageerd</li>
+                    
+                    <li>Strategisch denken</li>
+                    
+                    <li>Proces implementaties</li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Ervaring</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-2 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link active bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
+                                    id='axxon-kik-2023-heden-tab'
+                                    data-bs-target='#pills-axxon-kik-2023-heden'
+                                    aria-controls='axxon-kik-2023-heden'
+                                >
+                                    AXXON KiK
+                                </div>
+                            </li>
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link  bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
+                                    id='zas-ict-2023-heden-tab'
+                                    data-bs-target='#pills-zas-ict-2023-heden'
+                                    aria-controls='zas-ict-2023-heden'
+                                >
+                                    ZAS ICT
+                                </div>
+                            </li>
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link  bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
+                                    id='zas-revalidatie-2019-2023-tab'
+                                    data-bs-target='#pills-zas-revalidatie-2019-2023'
+                                    aria-controls='zas-revalidatie-2019-2023'
+                                >
+                                    ZAS Revalidatie
+                                </div>
+                            </li>
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link  bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
+                                    id='vvs-2015-2017-tab'
+                                    data-bs-target='#pills-vvs-2015-2017'
+                                    aria-controls='vvs-2015-2017'
+                                >
+                                    VVS
+                                </div>
+                            </li>
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link  bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
+                                    id='vrije-universiteit-brussel-2014-2015-tab'
+                                    data-bs-target='#pills-vrije-universiteit-brussel-2014-2015'
+                                    aria-controls='vrije-universiteit-brussel-2014-2015'
+                                >
+                                    Vrije Universiteit Brussel
+                                </div>
+                            </li>
+                        
+                    </ul>
+
+                    <div class="tab-content pb-3 bg-transparent primary-font" id="pills-tabContent">
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent show active"
+                                role="tabpanel"
+                                id='pills-axxon-kik-2023-heden'
+                                aria-labelledby='axxon-kik-2023-heden-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Bestuurder beleidsplan</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="https://axxon.be" target="_blank">AXXON KiK</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2023 - heden</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <ul>
+<li>Analyse van de lopende processen en projecten</li>
+<li>Belangrijkste processen en projecten kiezen</li>
+<li>Deze prioritaire zaken vertale naar concrete operationale doelstellingen met timing.</li>
+<li>Tot slot heb ik al deze operationele vertaald naar een coherente tekst en een opvolgdashboard.</li>
+</ul>
+
+                                        </div>
+                                    </div>
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h5">Expert Instellingen</span>
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2020 - 2023</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <ul>
+<li>Ervaringsdeskundige op het vlak van kinesitherapie in ziekenhuizen.</li>
+<li>Samen een structuur opgezet met vaste werkgroepen en klankboordgroepen uit het werkveld.</li>
+<li>Onze voornaamste taak was het vertalen van hun werkgroep naar concreet beleid binnen AXXON, KiK</li>
+</ul>
+
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent "
+                                role="tabpanel"
+                                id='pills-zas-ict-2023-heden'
+                                aria-labelledby='zas-ict-2023-heden-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Expert Applicatiebeheer</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="https://zas.be" target="_blank">ZAS ICT</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2023 - heden</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>In deze rol ondersteun ik dagelijks collega&rsquo;s op de werkvloer met klinische ICT toepassingen.
+Dit door ondersteuning bij problemen als door het uitrollen van nieuwe features en toepassingen via projecten.
+Momenteel werk ik o.a. aan:</p>
+<ul>
+<li>Projectverantwoordelijke voor implementeren van een LLM bij diagnoseregistratie</li>
+<li>Verantwoordelijke voor werkgroep die de performantie van het EPD bewaakt</li>
+<li>Integreren van telegeneeskunde in het EPD</li>
+</ul>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent "
+                                role="tabpanel"
+                                id='pills-zas-revalidatie-2019-2023'
+                                aria-labelledby='zas-revalidatie-2019-2023-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Adjunct diensthoofd</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="https://zas.be" target="_blank">ZAS Revalidatie</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2019 - 2023</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>Naast het werk als therapeut ondersteunde ik het diensthoofd in</p>
+<ul>
+<li>strategische keuzes,</li>
+<li>verbeterprojecten opzetten en uitrollen</li>
+<li>dagelijkse organisatie van de dienst (vakantieplannen, dienstroosters,&hellip;)</li>
+</ul>
+<p>Mijn grootste project was het uittekenen en implementeren van een nieuwe werking gebaseerd op inhoudelijk congruente clusters.</p>
+
+                                        </div>
+                                    </div>
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h5">Kinestherapeut</span>
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small> 2015 - 2023</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>Afgestudeerd in de inwendige aandoeningen, heb ik voornamlijk gewerkt op internistische diensten</p>
+<ul>
+<li>Geriatrie</li>
+<li>Oncologie</li>
+<li>Pneumologie</li>
+<li>Intensieve zorgen.</li>
+</ul>
+<p>Daarnaast was ik ook steeds flexibel inzetbaar op andere diensten waar tijdelijke tekorten waren.</p>
+
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent "
+                                role="tabpanel"
+                                id='pills-vvs-2015-2017'
+                                aria-labelledby='vvs-2015-2017-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Voorzitter Vlaamse Vereniging van Studenten</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="https://vvs.ac" target="_blank">VVS</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small> 2015 - 2017</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>Na een zeer woelige tijd met een moeizame overdracht heb ik vooral werk gemaakt van rust en stabiliteit. In 2 jaar zijn we erin geslaagd uitzonderlijk veel standpunten uit te brengen en de interne werking op punt gesteld.
+Naast de rust hebben we actief geageerd en gereageerd op de grote studenten-dossiers van die tijd zowel op straat in de media als in werkgroepen, raden en bestuursorganen</p>
+<ul>
+<li>Betogingen tegen verhoogde inschrijvingsgelden</li>
+<li>Een oplossing voor studenten getroffen door stakingen van het OV tijdens de examens</li>
+<li>Een grote studentenraad die de organisatie verliet</li>
+</ul>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent "
+                                role="tabpanel"
+                                id='pills-vrije-universiteit-brussel-2014-2015'
+                                aria-labelledby='vrije-universiteit-brussel-2014-2015-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Voorzitter Studenten- en Stuvoraad</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="https://vub.be" target="_blank">Vrije Universiteit Brussel</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2014 - 2015</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>Studenten- en Stuvoraad zijn verantwoordelijk voor alles van subsidies van de studentenverenigingen over studentenrestaurant tot het kotenbeleid De voornaamste dossiers in mijn voorzittersjaar.</p>
+<ul>
+<li>Een nieuw kotenbeleid</li>
+<li>Implenteren van genderquota&rsquo;s</li>
+<li>Ondertekenen van de Bolognaverklaring door de VUB</li>
+</ul>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="education" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Education</h3>
+        <div class="row justify-content-center py-5">
+            
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2024</small>
+                                </div>
+                                <h5 class="card-title">Lean Sigma Six: Yellow Belt</h5>
+                                
+                                
+                                Lean Team ZAS
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2020 - 2022</small>
+                                </div>
+                                <h5 class="card-title">Master Management &amp; Beleid in de Gezondheidszorg</h5>
+                                
+                                
+                                <a href="https://www.kuleuven.be/opleidingen/master-management-beleid-gezondheidszorg" target="_blank">
+                                    <h6>
+                                    Katholieke Universiteit Leuven
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    <p>Thesis: Process evaluation of the Magnet4Europe intervention</p>
+<p>Enkele favoriete opleidingsonderdelen</p>
+<ul>
+<li>Human Resourse</li>
+<li>Modellen van de Gezondheidszorg</li>
+<li>ICT in de Gezondheidszorg</li>
+</ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2010 - 2015</small>
+                                </div>
+                                <h5 class="card-title">Master Revalidatiewetenschappen &amp; Kinesitherapie</h5>
+                                
+                                
+                                <a href="https://www.vub.be/nl/studeren-aan-de-vub/alle-opleidingen/bachelor-en-masteropleidingen-aan-de-vub/revalidatiewetenschappen-en-kinesitherapie" target="_blank">
+                                    <h6>
+                                    Vrije Universiteit Brussel
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    <p>Thesis: The wavelet analysis of sEMG as a tool to measure muscular fatigue during a counter motion jump in, healthy adult: a pilot study</p>
+<p>Enkele favoriete opleidingsonderdelen</p>
+<ul>
+<li>Pneumologie</li>
+<li>Cardiologie</li>
+<li>Praktijkmanagement</li>
+</ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Portfolio</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Beleidsplan AXXON KiK">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="/images/achievements/axxonbeleidsplan.png">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Beleidsplan AXXON KiK</h5>
+                            <div class="card-text secondary-font">
+                                Verantwoordelijk bestuurder en auteur van het beleidsplan van AXXON. Op basis van de bestaande beleidsdocumenten en de bestaande projecten binnen de organisatie, heb ik een gedragen visie uitgeschreven tot het einde van legislatuur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Coördinatie Performantie Team ICT">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="/images/achievements/performance.jpeg">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Coördinatie Performantie Team ICT</h5>
+                            <div class="card-text secondary-font">
+                                Meldingen rond performantie werden lang niet of onvoldoende opgevolgd. Op mijn intiatief werd de werking van het performantie team hertekent. Nu worden meldingen systematischer opgepikt en opgelost. Daarbij wordt kennis meer gedeeld en is er nu ook pro-actief beleid rond performantie.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Functionele herstructurering kinesitherapie ZAS Middelheim">
+                        
+                            <div class="card-head">
+                                <img class="card-img-top" src="/images/achievements/OIP.jpeg">
+                            </div>
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Functionele herstructurering kinesitherapie ZAS Middelheim</h5>
+                            <div class="card-text secondary-font">
+                                
+De kinesitherapie wordt een steeds breder veld. Daardoor dringt specialisatie zich meer en meer op. Naast een solide basis hebben de meeste therapeuten intussen een  bepaalde afstudeerrichting of expertise opgebouwd in een bepaald domein. 
+Om deze specialisatie maximaal te laten renderen, heb ik een nieuwe werking op touw gezet. Deze cluster collega&#39;s met gelijkaardige specialismen en koppelt die cluster een de relevante ziekenhuisafdelingen. 
+Dit was een grote verandering en naast het uitwerken van het concept, heb ik samen met enkele collega&#39;s en het diensthoofd een veranderingstraject gelopen waarij iedereen uiteindelijk zijn draai gevonden heeft
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Deze website bouwen">
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Deze website bouwen</h5>
+                            <div class="card-text secondary-font">
+                                
+Naast mijn job en bestuursmandaat, werk ik graag af en toe aan een hobby-project. Bij voorkeur zijn dit praktische en laagdrempelige informatica-projectjes die goed zijn uitgewerkt op wiki&#39;s, in youtube video&#39;s en/of forums. 
+Een van deze projecten is deze website!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Beleidsvoorstellen ikv begroting AXXON KiK">
+                        
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Beleidsvoorstellen ikv begroting AXXON KiK</h5>
+                            <div class="card-text secondary-font">
+                                
+Als bestuur is financiële optimalisatie steeds een belangrijk aandachtspunt. In 3 etappes zijn we gekomen tot bijsturingen met positieve impact op de financieën en in lijn met het vooropgestelde beleid.
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Contacteer me</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        Mijn inbox is altijd open. Heb je een vraag, een inzicht of wil je gewoon dag zeggen? Stuur een bericht en ik antwoord snel!
+                    </div>
+                    
+                    <div class="text-center pt-3">
+                        <a 
+                            href='
+                                    mailto:info@jovelo.eu
+                                  '
+                            target="_blank"
+                            class="btn"
+                        >
+                            E-mail mij
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="profiel.jovelo.eu/" title="Jonathan Hooft">
+                        <img alt="Footer logo" src="/fav.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2025  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+        document.documentElement.classList.remove('dark');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
