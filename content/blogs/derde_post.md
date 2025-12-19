@@ -8,4 +8,4 @@ tags = []
 
 ## Blog 
 
-Even testen of cop-paste werkt of dat ik die echt met een command moet doen
+Dit is de derde post om te testen of de namechange gewerkt heeft. 
