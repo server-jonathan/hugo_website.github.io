@@ -1,4 +1,4 @@
-baseURL: "profiel.jovelo.eu"
+baseURL: "https://server-jonathan.github.io/hugo_website.github.io/"
 languageCode: "nl-be"
 title: "Jonathan Hooft"
 theme: hugo-profile
