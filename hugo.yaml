@@ -1,4 +1,4 @@
-baseURL: "https://server-jonathan.github.io/hugo_website.github.io/"
+baseURL: "https://server-jonathan.github.io/"
 languageCode: "nl-be"
 title: "Jonathan Hooft"
 theme: "hugo-profile"
